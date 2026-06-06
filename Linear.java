@@ -1,0 +1,26 @@
+/**
+ * 线性函数 f(x) = k*x + b
+ */
+public class Linear implements DifferentiableFunction {
+    private double k, b;
+
+    public Linear(double k, double b) {
+        this.k = k;
+        this.b = b;
+    }
+
+    @Override
+    public double eval(double x) {
+        return k * x + b;
+    }
+
+    @Override
+    public double diff(double x) {
+        return k;
+    }
+}
+
+
+
+
+
